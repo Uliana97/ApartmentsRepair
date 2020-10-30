@@ -1,0 +1,82 @@
+.request
+    background: url("../img/kitchen.png") no-repeat
+    background-size: 100%
+    position: relative
+    background-position: center right
+    background-size: cover
+    &::before
+        content: ""
+        width: 50%
+        height: 100%
+        position: absolute
+        background-color: white
+    &-box
+        width: 50%
+        color: $text
+        padding: 85px 0
+        padding-right: 90px
+        position: relative
+    &-title
+        font-size: 24px
+        line-height: 35px
+        margin-bottom: 24px
+        width: 355px
+        
+    &-subtitle
+        font-size: 16px
+        margin-bottom: 30px
+        width: 231px
+    &-form
+        &__button
+            width: 100%
+            margin-bottom: 30px
+            height: 70px
+        &__input
+            width: 48%
+            margin-bottom: 30px
+        &__input:nth-child(1)
+            margin-right: 15px
+    &-info
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-size: 15px
+        &__time
+            flex-basis: 40%
+            line-height: 24px
+        &__or
+            margin: 0
+            margin-bottom: 10px
+        &__tel
+            text-decoration: none
+            color: $text
+            font-size: 15px
+
+@media ( max-width: 1200px )
+    .request
+        &-form
+            &__input
+                 width: 100%
+                 margin-bottom: 10px
+@media ( max-width: 768px )
+    .request
+        background: white       
+        &-box
+            width: 100%
+            margin: 0
+            padding: 85px 0
+        &-title,&-subtitle
+            width: 100%
+            text-align: center
+            margin: 0 auto
+            margin-bottom: 20px
+        
+
+
+            
+        
+
+
+    
+
+        

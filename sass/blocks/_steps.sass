@@ -1,0 +1,43 @@
+.steps
+    text-align: center
+    &__title
+        max-width: 700px
+        margin-bottom: 60px
+    &__subtitle
+        font-size: 20px
+        opacity: 0.8
+        display: block
+        margin-bottom: 70px
+    &__box
+        display: flex
+        justify-content: space-around
+    &__card
+        max-width: 170px
+    &__arrow
+        display: block 
+    &__text
+        line-height: 20px
+        font-size: 14px
+@media ( max-width: 960px )
+    .steps
+        &__box
+            justify-content: space-between
+@media ( max-width: 760px )
+    .steps
+        &__box
+            flex-wrap: wrap
+        &__card
+            min-width: 100%
+        &__text
+            margin: 0 auto
+            max-width: 125px
+            margin-bottom: 20px
+        &__img
+            margin-bottom: 20px
+        &__title
+            margin-bottom: 30px
+        &__subtitle
+            margin-bottom: 30px
+        &__arrow
+            display: none
+

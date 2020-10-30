@@ -1,0 +1,104 @@
+.brif
+    padding: 108px 0
+    background-image: url('../img/brif-color.png'), url('../img/brif-bg.png')
+    background-position: left center, center right
+    background-size: 50%, cover
+    background-repeat: repeat-y, no-repeat
+    &-box
+        display: flex
+    &__quiz
+        flex-basis: 50%
+    &__form
+        padding-left: 210px
+        flex-basis: 50%
+        text-align: center
+        &__title
+            font-size: 22px
+            line-height: 33px
+            margin-bottom: 50px
+        &__subtitle
+            margin-bottom: 50px
+        &__input
+            width: 100%
+            max-width: 370px
+            margin-bottom: 15px  
+        &__button
+            width: 100%
+            max-width: 368px
+            height: 70px
+            margin-bottom: 30px     
+    .quiz
+        &__title
+            font-size: 22px
+            line-height: 33px
+            margin-bottom: 50px
+        &__subtitle
+            font-size: 16px
+            margin-bottom: 95px
+        &__list
+            list-style-type: none
+        &-item
+            font-size: 18px
+            display: flex
+            margin-bottom: 28px
+            font-weight: 600
+            &__number
+                display: inline-block
+                border: 2px solid $text
+                width: 35px
+                height: 35px
+                line-height: 35px
+                text-align: center
+                border-radius: 50%
+                margin-right: 44px
+            &__text
+                display: inline-block
+                line-height: 35px
+                max-width: 400px
+@media ( max-width: 1200px )
+    .brif
+        &__form
+            padding-left: 100px
+            &__title
+              font-size: 18px
+              line-height: 28px
+              margin-bottom: 15px
+            &__subtitle
+            margin-bottom: 30px
+        .quiz
+            &__title
+                font-size: 18px
+                line-height: 28px
+                margin-bottom: 15px
+            &__subtitle
+                margin-bottom: 30px
+            &-item
+                font-size: 16px
+@media ( max-width: 960px )
+    .brif
+        &__form
+            padding-left: 20px
+        .quiz
+            &-item
+                font-size: 14px
+                &__text
+                    max-width: 300px
+                &__number
+                    margin-right: 20px
+@media ( max-width: 760px )
+    .brif
+        padding: 30px 0
+        background-image: url('../img/brif-color.png'), url('../img/brif-bg.png')
+        background-position: top center, center bottom
+        background-size: 100% 50%, cover
+        background-repeat: repeat-x, no-repeat   
+        &__form
+            padding-left: 0
+            &__title
+                margin-top: 150px
+        &-box
+            flex-direction: column
+             
+
+                
+ 

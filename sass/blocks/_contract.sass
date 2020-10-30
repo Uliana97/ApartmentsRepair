@@ -1,0 +1,23 @@
+.contract
+    text-align: center
+    &__title
+        margin-bottom: 100px
+    &__box
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__card
+        width: 260px
+    &__wrap
+        padding: 25px
+        background-color: $cardBG-color
+        margin-bottom: 40px
+    &__img
+        width: 200px
+@media ( max-width: 760px )
+    .contract
+        &__box  
+            justify-content: center
+        &__card
+            margin-right: 10px
+            margin-bottom: 30px

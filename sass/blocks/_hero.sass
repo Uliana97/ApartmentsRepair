@@ -1,0 +1,77 @@
+.hero
+    background-color: $section
+    padding: 50px 0
+    &-box
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-text 
+        padding-right: 130px
+        color: $text  
+    &-title
+        font-size: 41px
+        font-weight: 400
+        margin-bottom: 50px
+    &-subtitle
+        font-size: 20px
+        font-weight: 400
+        margin-bottom: 80px
+    &-img
+        min-width: 570px
+        box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
+    &-list
+        list-style-type: none
+        &__item 
+            padding-left: 70px
+            position: relative
+            margin-bottom: 30px
+            min-height: 40px
+            display: flex
+            align-items: center
+            &::before
+                content: ""
+                display: inline-block
+                width: 40px
+                height: 40px
+                border: 2px solid $main-color
+                border-radius: 50%
+                vertical-align: middle
+                position: absolute
+                left: 0
+                background: url("../img/3-layers.png") center 10px no-repeat
+            &:nth-of-type(2)
+                &::before
+                    background-position: center -60px
+            &:nth-of-type(3)
+                &::before
+                    background-position: center -130px
+@media ( max-width: 1200px )
+    .hero
+        &-title
+            margin-bottom: 20px
+            font-size: 35px
+        &-subtitle
+            margin-bottom: 20px
+            font-size: 18px
+@media ( max-width: 960px )
+    .hero 
+        &-box
+            flex-direction: column
+        &-text
+            padding: 0
+@media ( max-width: 760px )
+    .hero
+         &-img
+            min-width: 0px
+
+    
+
+            
+                
+                
+
+
+            
+        
+        
+    

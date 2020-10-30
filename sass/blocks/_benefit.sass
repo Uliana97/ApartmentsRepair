@@ -1,0 +1,44 @@
+.benefit
+    &__box
+        display: flex
+        justify-content: space-around
+    &__card
+        max-width: 370px
+        height: 410px
+        background-color: $cardBG-color
+        position: relative
+    &__text
+        display: block
+        padding-left: 27px
+        padding-top: 27px
+        padding-right: 40px
+        font-size: 16px
+        line-height: 23px
+    &__img
+        position: absolute
+        bottom: 0
+        width: 100%
+    &__lay1
+        position: relative
+        display: block
+        z-index: 10
+    &__lay2
+        position: relative
+        display: block
+        z-index: 0
+    &__lay3
+        position: relative
+        display: block
+        z-index: 5
+@media ( max-width: 1200px )
+    .benefit 
+        &__box
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 30px
+            max-width: 280px
+            height: 350px
+
+
+
+    
